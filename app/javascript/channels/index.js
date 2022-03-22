@@ -3,3 +3,7 @@
 
 const channels = require.context('.', true, /_channel\.js$/)
 channels.keys().forEach(channels)
+
+$('#button-container').click(function(evento){
+    var pokemon = evento.target.dataset.pokemon;
+});
